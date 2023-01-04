@@ -1,8 +1,8 @@
 import streamlit as st
 import pandas as pd
+import pip
+pip.main(["install", "plotly"])
 import plotly.express as px
-import plotly
-import openpyxl
 import plotly.graph_objects as go
 
 st.set_page_config(
@@ -41,3 +41,12 @@ with tab2:
     st.info('''The investment to buy size B and C automatic stamping machines can be made as they are the most small-size demanded product by the market. 
 ''')
     st.table(data)
+    
+hide_st_style = """
+             <style>
+             #MainMenu {visibility: hidden;}
+             footer {visibility: hidden;}
+             header {visibility: hidden;}
+             </style>
+             """
+st.markdown(hide_st_style, unsafe_allow_html=True)
