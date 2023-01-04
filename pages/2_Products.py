@@ -5,7 +5,7 @@ from plotly.subplots import make_subplots
 import pandas as pd
 import plotly.express as px
 import pip
-pip.main(["install", "openpyxl"])
+pip.main(["install", "plotly"])
 
 st.set_page_config(
     page_title="Products"
