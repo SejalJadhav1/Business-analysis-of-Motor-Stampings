@@ -1,6 +1,6 @@
 import streamlit as st
-import plotly
-import openpyxl
+import pip
+pip.main(["install", "plotly"])
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
@@ -110,3 +110,13 @@ Therefore, more the products to be manufactured for an ordered size more is the 
      The client companies can be from a fan manufacturing background, Pump manufacturing background etc. 
      Manufacturing of these products requires small size motors only. 
      As a result, even with low profit margin we must give the market what it demands.”''')
+
+   
+hide_st_style = """
+             <style>
+             #MainMenu {visibility: hidden;}
+             footer {visibility: hidden;}
+             header {visibility: hidden;}
+             </style>
+             """
+st.markdown(hide_st_style, unsafe_allow_html=True)
