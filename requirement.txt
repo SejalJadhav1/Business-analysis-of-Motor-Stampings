@@ -1,0 +1,10 @@
+streamlit
+numpy
+pandas
+beautifulsoup4
+flask
+html5lib
+requests
+urllib3
+bs4
+plotly
