@@ -49,7 +49,7 @@ with tab1:
         legend_title_font_color="green"
     )
     fig.update_layout(showlegend=False)
-    fig.update_layout(height=370, width=700)
+    fig.update_layout(height=450, width=700)
 
     st.write(fig)
 
