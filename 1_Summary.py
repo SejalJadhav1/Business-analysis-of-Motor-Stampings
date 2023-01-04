@@ -59,3 +59,11 @@ with tab3:
    product_data = pd.read_excel("bdm_alpha.xlsx", sheet_name="Sheet2")
    st.table(product_data)
 
+hide_st_style = """
+             <style>
+             #MainMenu {visibility: hidden;}
+             footer {visibility: hidden;}
+             header {visibility: hidden;}
+             </style>
+             """
+st.markdown(hide_st_style, unsafe_allow_html=True)
