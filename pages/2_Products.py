@@ -143,3 +143,12 @@ with tab4:
 The highest quantity order was for product F and M in the consecutive last three months of 2021. 
 ''')
 
+    
+hide_st_style = """
+             <style>
+             #MainMenu {visibility: hidden;}
+             footer {visibility: hidden;}
+             header {visibility: hidden;}
+             </style>
+             """
+st.markdown(hide_st_style, unsafe_allow_html=True)
