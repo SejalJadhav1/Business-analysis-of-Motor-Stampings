@@ -1,11 +1,11 @@
 import pandas as pd
 import streamlit as st
+import pip
+pip.main(["install", "plotly"])
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import pandas as pd
 import plotly.express as px
-import pip
-pip.main(["install", "plotly"])
 
 st.set_page_config(
     page_title="Products"
